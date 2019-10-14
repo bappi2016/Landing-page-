@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li> <a href="">home</a> </li>
+            <li> <a href="">news</a> </li>
+            <li> <a href="">contact</a> </li>
+            <li> <a href="">about</a> </li>
+            <li class="topnav-right"> <a href="">sign up</a> </li>
+            <li class="topnav-right"> <a href="">sign in</a> </li>
+            <li class="dropdownicon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+            <div class="leftside-col">
+                <h1 class="larger">Crazy Radness</h1>
+                <h1 class="larger">Made for Developers</h1>
+            </div>
+            <form action="">
+                <div class="leftside-col">
+                <h2>Username</h2>
+                <input class="inputBox" type="text" name="username" placeholder="Username">
+                 <h2>Password</h2>
+                 <input class="inputBox" type="text" name="password" placeholder="Password">
+                </div>
+            </form>
+            </div>
+            <div class="col-6">
+            <div class="rightside-col">
+            <div class="videocontainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <header>
+    <h1 class="section2header">The Standards of Awesomeness</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                <div class="icon">
+                <img src="devIcon.png" alt="">
+                </div>
+                    <label>Chat With Me</label>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, blanditiis quia! Odit provident libero perferendis modi excepturi. Exercitationem vitae similique explicabo, facere blanditiis voluptatem, necessitatibus placeat ut, est dolorum alias.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                 <div class="icon">
+                <img src="devIcon.png" alt="">
+                </div>
+                    <label>Learn To Code</label>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, fugit ipsam. Asperiores, dolor quod! Temporibus quidem harum perferendis, molestias ipsa repellat reiciendis repellendus animi, tempora, deleniti quos dolorem provident error.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                 <div class="icon">
+                <img src="devIcon.png" alt="">
+                </div>
+                    <label>Build An Empire</label>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus molestiae tenetur iste aspernatur perferendis minima velit temporibus dolorem dignissimos nulla ipsum repudiandae fugit omnis, sed animi hic. Nihil, neque voluptatem.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+        <div class="col-12">
+            <button class="learnmore">Learn More</button>
+        </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+
+    <div class="row">
+        <div class="col-7">
+    <article>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis aspernatur a rerum aliquid at id qui aliquam dolorem dolor! Dignissimos vel, in dolor quia vitae possimus recusandae aspernatur id.</p>
+    </article>
+    </div>
+
+    <div class="col-5">
+        <div class="slopeIcon">
+        <img src="iOS-Slope.png" alt="">
+        </div>
+    </div>
+    
+    
+    </div>
+
+
+    </div>
+
+
+
+    <!---Footer--->
+
+    <footer class="footsy">
+    <div class="row">
+
+    <div class="col-3 mobilestack">
+    <h1>Company</h1>
+    <ul>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Career</li>
+    </ul>
+    </div>
+
+    <div class="col-3 mobilestack">
+    <h1>Products</h1>
+    <ul>
+        <li>Computer</li>
+        <li>Ipad</li>
+        <li>Iphone</li>
+    </ul>
+    </div>
+
+    <div class="col-3 mobilestack">
+    <h1>Learn More</h1>
+    <ul>
+        <li>Developer</li>
+        <li>Deginers</li>
+        <li>Hackers</li>
+    </ul>
+    </div>
+
+    <div class="col-3 mobilestack">
+    <h1>Support</h1>
+     <ul>
+        <li>Help</li>
+        <li>QA</li>
+        <li>Contact</li>
+    </ul>
+    </div>
+    
+    </div>
+    </footer>
+
+
+<script>
+    function dropdownMenu(){
+        var x = document.getElementById("dropdownClick");
+        // now check if the selected id has the class topnav
+        if(x.className === "topnav"){
+            // if yes, then add another class responsive to it on button click
+            x.className += " responsive"; 
+        } else {
+            // if didn't click then keep it as usual like topnav
+            x.className = "topnav";
+        }
+
+    }
+    </script>
+</body>
+</html>
